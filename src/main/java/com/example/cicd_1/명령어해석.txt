@@ -1,0 +1,15 @@
+  nohup java -jar build/libs/*SNAPSHOT.jar > ./output.log 2>&1  &
+
+
+  nohup  : 터미널을 꺼도(SSH 종료해도) 프로세스가 죽지 않게 해줌
+  java -jar build/libs/*SNAPSHOT.jar
+  > ./output.log
+  표준 출력(stdout) 리다이렉션
+
+
+  2>&1
+  에러 로그도 output.log 하나로 몰아서 저장
+
+
+  &
+  백그라운드 실행
