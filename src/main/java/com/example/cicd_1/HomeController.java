@@ -19,4 +19,11 @@ public class HomeController {
     public  String hi2(){
         return  "hi2";
     }
+
+
+    @ResponseBody
+    @GetMapping("/hi3")
+    public  String hi3(){
+        return  "hi3";
+    }
 }
